@@ -7,7 +7,7 @@ public class LinkedListMain {
 		LinkedList.insertNode(l, 56);
 		LinkedList.insertNode(l, 30);
 		LinkedList.insertNode(l, 70);
-		LinkedList.popFromFront(l);
+		LinkedList.popFromEnd(l);
 		LinkedList.printLinkedList(l);
 	}
 
