@@ -1,7 +1,9 @@
+package stackAndQueue;
+
 
 public class LinkedList {
 
-	LinkedListNode head;
+	LinkedListNode head=null;
 	
 	public static <T> void insertNode(LinkedList l, T val) {
 		LinkedListNode<T> n = new LinkedListNode<T>(val);
@@ -14,6 +16,15 @@ public class LinkedList {
 			}
 			prev.setNext(n);
 		}
+	}
+	public static <T> int size(LinkedList l) {
+		int count=0;
+		LinkedListNode temp = l.head;
+		while(temp!=null) {
+			temp=temp.getNext();
+			count++;
+		}
+		return count;
 	}
 	public static<T> void insertAtStart(LinkedList l, T val) {
 		LinkedListNode<T> n = new LinkedListNode<T>(val);
@@ -62,8 +73,9 @@ public class LinkedList {
 	}
 	public static <T> void printLinkedList(LinkedList l) {
 		LinkedListNode temp = l.head;
-		while(temp.getNext()!=null) {
-			System.out.println(temp.getVal()+ " ");
+		while(temp!=null) {
+			System.out.print(temp.getVal()+ " ");
+			temp=temp.getNext();		
 		}
 	}
 	public static <T> void search(LinkedList l, T val) {
@@ -101,3 +113,4 @@ public class LinkedList {
 		}
 	}
 }
+
