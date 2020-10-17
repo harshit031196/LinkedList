@@ -7,7 +7,7 @@ public class LinkedListMain {
 		LinkedList.insertNode(l, 56);
 		LinkedList.insertNode(l, 30);
 		LinkedList.insertNode(l, 70);
-		LinkedList.search(l,30);
+		LinkedList.insertAfterNode(l,40,30);
 		LinkedList.printLinkedList(l);
 	}
 
